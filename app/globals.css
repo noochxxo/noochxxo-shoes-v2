@@ -4,33 +4,33 @@
 
 @layer base {
   :root {
-    --background: 265,83.4%,35.5%;
+    --background: 265, 83.4%, 35.5%;
     --foreground: 222.2 84% 4.9%;
 
-    --card: 265.1,75.5%,27.3%;
+    --card: 265.1, 75.5%, 27.3%;
     --card-foreground: 222.2 84% 4.9%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 203,96%,48.4%;
-    --primary-foreground: 169.1,96%,48.4%;
+    --primary: 203, 96%, 48.4%;
+    --primary-foreground: 169.1, 96%, 48.4%;
 
-    --secondary: 191,96.4%,43.3%;
-    --secondary-foreground: 120,100%,99.6%;
+    --secondary: 191, 96.4%, 43.3%;
+    --secondary-foreground: 120, 100%, 99.6%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 50.3,76.9%,47.5%;
-    --accent-foreground: 129,69.8%,83.1%;
+    --accent: 50.3, 76.9%, 47.5%;
+    --accent-foreground: 129, 69.8%, 83.1%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 343.3,100%,50%;
+    --ring: 343.3, 100%, 50%;
 
     --radius: 0.5rem;
   }
@@ -42,5 +42,18 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .drop-shadow-2xl-up {
+    --tw-drop-shadow: drop-shadow(0 -25px 25px rgb(0 0 0 / 0.15));
+    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+      var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert)
+      var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  }
+
+  .bottom-bar {
+    @apply z-50 sticky bottom-0 rounded-t-3xl px-5 py-4 drop-shadow-2xl-up;
   }
 }

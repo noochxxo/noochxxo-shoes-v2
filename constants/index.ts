@@ -1,13 +1,18 @@
+
 export const navbarLinks = [
   {
     imgURL: '',
     route: '/products',
-    label: 'Catalogue',
+    label: 'Shop',
   },
-
   {
     imgURL: '/icons/upcoming.svg',
-    route: '/about',
-    label: 'About',
+    route: '/cart',
+    label: 'Bag',
+  },
+  {
+    imgURL: '/icons/upcoming.svg',
+    route: '/favorites',
+    label: 'Favorites',
   },
 ];

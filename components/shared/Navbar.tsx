@@ -1,85 +1,101 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import {
+  Home,
+  ShoppingCart,
+  ShoppingBag,
+  Heart,
+  UserRound,
+} from "lucide-react";
+import { navbarLinks } from "@/constants";
 
-import { navbarLinks } from '@/constants'
-
-const  Navbar = () => {
-  const pathname = usePathname()
+const Navbar = () => {
+  // const pathname = usePathname()
   return (
     <nav
-      className='
-        hidden
-        md:flex
+      className="
+        flex
         justify-around
         items-center
-        gap-3
-        fixed
+        gap-1
         w-full
-        h-20
+        h-32
         bg-background
-        drop-shadow-2xl
-        text-2xl
-        rounded-b-3xl
-      '
+        text-md
+        font-extrabold
+        bottom-bar
+        max-md:fixed
+        md:drop-shadow-2xl
+        md:rounded-b-3xl
+        md:text-2xl
+      "
     >
-      <Link
-        href={'/'}
-      >
+      <Link href={"/"} className="hidden md:flex">
         <h3
-          className='
+          className="
             text-secondary-foreground
-          '
-        >Noochxxo Shoes</h3>
+          "
+        >
+          Noochxxo Shoes
+        </h3>
       </Link>
       <div
-        className='w-2/5'
+        className="
+          grow
+        "
       >
         <ul
-          className='
+          className="
             text-primary
             flex
             justify-around
-          '
+          "
         >
-         {
-          navbarLinks.map((link) => {
-            const active = pathname === link.route
+          {navbarLinks.map((link) => {
+            // const isActive = pathname === link.route
             return (
-              <li key={link.route}
-                className={`link ${active ? 'text-4xl' : ''}`}
-              >
-                <Link href={link.route}>
+              <Link href={link.route} className={`text-md md:text-2xl`}>
+                <li key={link.route} className={`flex flex-col items-center `}>
+                  {link.label === "Shop" ? (
+                    <ShoppingCart />
+                  ) : link.label === "Bag" ? (
+                    <ShoppingBag />
+                  ) : (
+                    <Heart />
+                  )}
+
                   {link.label}
-                </Link>
-              </li>
-            )
-          } )
-         } 
+                </li>
+              </Link>
+            );
+          })}
         </ul>
       </div>
       <div>
         <SignedIn>
-          <UserButton afterSignOutUrl='/' />
+          <UserButton afterSignOutUrl="/" />
         </SignedIn>
 
         <SignedOut>
           <Link
-            href={'/'}
-            className='
+            href={"/"}
+            className="
+              flex
+              flex-col
+              items-center
               text-secondary-foreground
-            '
+            "
           >
-            Login/SignUp
+            <UserRound className="md:hidden" />
+            <p>Login/Signup</p>
           </Link>
         </SignedOut>
-
-        {/* <MobileNav /> */}
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
