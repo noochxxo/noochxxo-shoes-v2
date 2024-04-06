@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from 'next/link'
 import { Heart } from 'lucide-react';
 
 import { Card, CardContent } from "../ui/card";
@@ -12,8 +13,14 @@ const ProductCard = ({ product }: { product: ProductType }) => {
 
   const [productRating, setProductRating] = useState(0);
 
+
+
   return (
     <>
+    
+      <Link
+      href={`/product/${product.id}`}
+    >
     <Card>
       <CardContent className="justify-center p-0 m-0 ">
           <Badge variant="secondary" 
@@ -24,9 +31,7 @@ const ProductCard = ({ product }: { product: ProductType }) => {
             >$20 off</p>
           </Badge>
 
-          <Badge 
-            className="absolute bottom-20 ml-48 bg-card rounded-full size-10 hover:bg-card hover:size-12 "
-          ><Heart className="text-secondary hover:size-12" /></Badge>
+          
           <Image
             src="/images/hero.jpg"
             width={3499}
@@ -38,6 +43,8 @@ const ProductCard = ({ product }: { product: ProductType }) => {
           
       </CardContent>
     </Card>
+    </Link>
+    
     <div
       className="
         flex
@@ -45,11 +52,13 @@ const ProductCard = ({ product }: { product: ProductType }) => {
       "
     >
       <StarRating maxRating={5} userRatingCount={product.userRatingCount} onChange={setProductRating} />
+      
       <h2
         className="
           text-secondary-foreground
         "
       >{product.title}</h2>
+      
       <div
         className="flex gap-3"
       >
@@ -62,8 +71,13 @@ const ProductCard = ({ product }: { product: ProductType }) => {
             text-accent
           "
         >{product.salePrice}</span>
+        <Badge 
+            className="bg-card rounded-full size-10 hover:bg-card hover:size-12 "
+          ><Heart className="text-secondary hover:size-12" /></Badge>
       </div>
+      
     </div>
+    
     </>
   );
 };

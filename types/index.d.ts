@@ -1,4 +1,5 @@
 declare type ProductType = {
+  id: string
   price: string;
   salePrice: string;
   salePrecent: string;

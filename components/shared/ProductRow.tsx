@@ -47,7 +47,7 @@ const ProductRow = ({ row }: { row: ProductRowType }) => {
             {row.description}
           </p>
         </div>
-        <Link href='/'
+        <Link href={`/category/${row.title.toLowerCase()}`}
           className="
             text-secondary-foreground
             font-extrabold

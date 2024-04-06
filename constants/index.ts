@@ -19,6 +19,7 @@ export const navbarLinks = [
 
 export const products = [
   {
+    id: '2342fefw',
     price: '$120',
     salePrice: '$100',
     salePrecent: '-$20',
@@ -29,6 +30,7 @@ export const products = [
     url: '/products/coolshoetitle',
   },
   {
+    id: '1fdh4h5',
     price: '$120',
     salePrice: '$100',
     salePrecent: '-$20',
@@ -39,6 +41,7 @@ export const products = [
     url: '/products/coolshoetitle',
   },
   {
+    id: 'dsffglkjsdf98sd',
     price: '$120',
     salePrice: '$100',
     salePrecent: '-$20',
@@ -49,6 +52,7 @@ export const products = [
     url: '/products/coolshoetitle',
   },
   {
+    id: 'sadfsdnds8f9',
     price: '$120',
     salePrice: '$100',
     salePrecent: '-$20',
@@ -59,6 +63,7 @@ export const products = [
     url: '/products/coolshoetitle',
   },
   {
+    id: '23fkndfsi0',
     price: '$120',
     salePrice: '$100',
     salePrecent: '-$20',
@@ -69,6 +74,7 @@ export const products = [
     url: '/products/coolshoetitle',
   },
   {
+    id: 'sjldfh02n',
     price: '$120',
     salePrice: '$100',
     salePrecent: '-$20',
