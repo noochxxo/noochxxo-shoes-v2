@@ -79,3 +79,14 @@ export const products = [
     url: '/products/coolshoetitle',
   },
 ]
+
+export const productRows = [
+  {
+    title: 'New',
+    description: 'New shoes in stock'
+  },
+  {
+    title: 'Sale',
+    description: 'Curently on sale'
+  },
+]

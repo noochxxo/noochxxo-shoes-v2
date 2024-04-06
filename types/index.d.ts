@@ -8,3 +8,8 @@ declare type ProductType = {
   userRatingCount: number
   url: string
 }
+
+declare type ProductRowType = {
+  title: string;
+  description: string;
+}
