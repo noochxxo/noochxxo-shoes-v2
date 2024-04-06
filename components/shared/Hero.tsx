@@ -5,7 +5,7 @@ import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
-    <section className="w-full md:absolute md:top-28">
+    <section className="w-full overflow-hidden">
       <div>
         <AspectRatio ratio={16 / 9}>
           <Image
@@ -17,9 +17,9 @@ const Hero = () => {
           />
           <div
             className="
-              pl-3
+              pl-8
               absolute
-              bottom-0
+              bottom-10
             "
           >
             <h2
