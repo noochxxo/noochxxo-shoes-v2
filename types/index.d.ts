@@ -7,7 +7,7 @@ declare type ProductType = {
   liked: boolean
   rating: number
   userRatingCount: number
-  url: string
+  urlBase: string
 }
 
 declare type ProductRowType = {

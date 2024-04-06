@@ -2,6 +2,7 @@
  - Hero.tsx h2 starts to break after 1480px wide
  - Navbar is not fixed to the top on md size
  - the heart is broke in different screen sizes
+ - images in product card, showcase are hard coded
 
 So far my shoe stores current state
 ![Current state](_screenshots/CurrentState.png)

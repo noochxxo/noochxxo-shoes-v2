@@ -27,7 +27,7 @@ export const products = [
     liked: false,
     rating: 4,
     userRatingCount: 18,
-    url: '/products/coolshoetitle',
+    urlBase: '/product/',
   },
   {
     id: '1fdh4h5',
@@ -38,7 +38,7 @@ export const products = [
     liked: false,
     rating: 5,
     userRatingCount: 16,
-    url: '/products/coolshoetitle',
+    urlBase: '/product/',
   },
   {
     id: 'dsffglkjsdf98sd',
@@ -49,7 +49,7 @@ export const products = [
     liked: false,
     rating: 3,
     userRatingCount: 10,
-    url: '/products/coolshoetitle',
+    url: '/product/',
   },
   {
     id: 'sadfsdnds8f9',
@@ -60,7 +60,7 @@ export const products = [
     liked: false,
     rating: 2,
     userRatingCount: 7,
-    url: '/products/coolshoetitle',
+    url: '/product/',
   },
   {
     id: '23fkndfsi0',
@@ -71,7 +71,7 @@ export const products = [
     liked: false,
     rating: 4,
     userRatingCount: 5,
-    url: '/products/coolshoetitle',
+    url: '/product/',
   },
   {
     id: 'sjldfh02n',
@@ -82,7 +82,7 @@ export const products = [
     liked: false,
     rating: 4,
     userRatingCount: 1,
-    url: '/products/coolshoetitle',
+    url: '/product/',
   },
 ]
 

@@ -19,7 +19,7 @@ const ProductCard = ({ product }: { product: ProductType }) => {
     <>
     
       <Link
-      href={`/product/${product.id}`}
+      href={`${product.urlBase}${product.id}`}
     >
     <Card>
       <CardContent className="justify-center p-0 m-0 ">
