@@ -54,6 +54,6 @@
   }
 
   .bottom-bar {
-    @apply z-50 sticky bottom-0 rounded-t-3xl px-5 py-4 drop-shadow-2xl-up;
+    @apply z-50  bottom-0 rounded-t-3xl px-5 py-4 drop-shadow-2xl-up;
   }
 }

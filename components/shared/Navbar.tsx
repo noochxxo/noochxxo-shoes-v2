@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import {
-  Home,
   ShoppingCart,
   ShoppingBag,
   Heart,
@@ -17,7 +16,7 @@ const Navbar = () => {
   return (
     <nav
       className="
-        z-50
+        sticky
         flex
         justify-around
         items-center

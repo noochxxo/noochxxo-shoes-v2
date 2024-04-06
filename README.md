@@ -1,5 +1,6 @@
 # TODO:
   Hero.tsx h2 starts to break after 1480px wide
+  Navbar is not fixed to the top on md size
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

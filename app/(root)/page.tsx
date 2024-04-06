@@ -4,9 +4,15 @@ import ProductRow from "@/components/shared/ProductRow";
 export default function Home() {
   return (
     <main
-      className="h-full flex flex-col"
+      className="flex flex-col pb-32 pt-8"
     >
-        <Hero />
+        <ProductRow /> 
+        <ProductRow /> 
+        <ProductRow /> 
+        <ProductRow /> 
+        <ProductRow /> 
+        <ProductRow /> 
+        <ProductRow /> 
         <ProductRow /> 
     </main>
   );
