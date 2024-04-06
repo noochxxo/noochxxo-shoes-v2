@@ -15,6 +15,7 @@ const HomeLayout = ({ children }: { children: ReactNode } ) => {
   return (
     <main className="w-screen h-screen">
       <Navbar />
+      
       {children}
     </main>
   )

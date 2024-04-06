@@ -17,6 +17,7 @@ const Navbar = () => {
   return (
     <nav
       className="
+        z-50
         flex
         justify-around
         items-center
@@ -28,7 +29,7 @@ const Navbar = () => {
         font-extrabold
         bottom-bar
         max-md:fixed
-        md:drop-shadow-2xl
+        md:drop-shadow-lg
         md:rounded-b-3xl
         md:text-2xl
       "
@@ -57,8 +58,8 @@ const Navbar = () => {
           {navbarLinks.map((link) => {
             // const isActive = pathname === link.route
             return (
-              <Link href={link.route} className={`text-md md:text-2xl`}>
-                <li key={link.route} className={`flex flex-col items-center `}>
+              <Link key={link.route} href={link.route} className={`text-md md:text-2xl`}>
+                <li className={`flex flex-col items-center `}>
                   {link.label === "Shop" ? (
                     <ShoppingCart />
                   ) : link.label === "Bag" ? (
