@@ -29,8 +29,10 @@ const Navbar = () => {
         bottom-bar
         max-md:fixed
         md:drop-shadow-lg
+        md:rounded-none
         md:rounded-b-3xl
         md:text-2xl
+        bg-gradient-to-r from-background via-purple-500 to-pink-500
       "
     >
       <Link href={"/"} className="hidden md:flex">

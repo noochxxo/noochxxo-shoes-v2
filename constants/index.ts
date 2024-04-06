@@ -25,7 +25,7 @@ export const products = [
     title: 'Cool Shoes',
     liked: false,
     rating: 4,
-    ratingCount: 18,
+    userRatingCount: 18,
     url: '/products/coolshoetitle',
   },
   {
@@ -35,7 +35,7 @@ export const products = [
     title: 'Cool Shoes',
     liked: false,
     rating: 5,
-    ratingCount: 16,
+    userRatingCount: 16,
     url: '/products/coolshoetitle',
   },
   {
@@ -45,7 +45,7 @@ export const products = [
     title: 'Cool Shoes',
     liked: false,
     rating: 3,
-    ratingCount: 10,
+    userRatingCount: 10,
     url: '/products/coolshoetitle',
   },
   {
@@ -55,7 +55,7 @@ export const products = [
     title: 'Cool Shoes',
     liked: false,
     rating: 2,
-    ratingCount: 7,
+    userRatingCount: 7,
     url: '/products/coolshoetitle',
   },
   {
@@ -65,7 +65,7 @@ export const products = [
     title: 'Cool Shoes',
     liked: false,
     rating: 4,
-    ratingCount: 5,
+    userRatingCount: 5,
     url: '/products/coolshoetitle',
   },
   {
@@ -75,7 +75,7 @@ export const products = [
     title: 'Cool Shoes',
     liked: false,
     rating: 4,
-    ratingCount: 1,
+    userRatingCount: 1,
     url: '/products/coolshoetitle',
   },
 ]

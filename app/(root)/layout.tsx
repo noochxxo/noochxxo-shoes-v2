@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const HomeLayout = ({ children }: { children: ReactNode } ) => {
   return (
-    <main className="w-screen h-full flex flex-col">
+    <main className="w-screen h-full flex flex-col bg-gradient-to-r from-pink-500 via-purple-500 to-background">
       <Navbar />
       <Hero />
       {children}

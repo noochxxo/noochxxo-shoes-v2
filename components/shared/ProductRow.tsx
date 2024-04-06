@@ -4,8 +4,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 
 import ProductCard from "./ProductCard";
@@ -18,7 +16,6 @@ const ProductRow = () => {
       className="
         flex
         justify-center
-        
       "
     >
       <Carousel

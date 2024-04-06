@@ -1,10 +1,10 @@
 declare type ProductType = {
-  price: String;
-  salePrice: String;
-  salePrecent: String;
+  price: string;
+  salePrice: string;
+  salePrecent: string;
   title: string;
-  liked: Boolean
-  rating: Number
-  ratingCount: Number
-  url: String
+  liked: boolean
+  rating: number
+  userRatingCount: number
+  url: string
 }
