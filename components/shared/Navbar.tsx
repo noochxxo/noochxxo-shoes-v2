@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import {
   ShoppingCart,
   ShoppingBag,
@@ -77,11 +76,8 @@ const Navbar = () => {
         </ul>
       </div>
       <div>
-        <SignedIn>
-          <UserButton afterSignOutUrl="/" />
-        </SignedIn>
 
-        <SignedOut>
+        {/* <SignedOut>
           <Link
             href={"/"}
             className="
@@ -94,7 +90,7 @@ const Navbar = () => {
             <UserRound className="md:hidden" />
             <p>Login/Signup</p>
           </Link>
-        </SignedOut>
+        </SignedOut> */}
       </div>
     </nav>
   );
