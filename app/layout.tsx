@@ -1,4 +1,4 @@
-import { ClerkProvider } from '@clerk/nextjs'
+
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -17,13 +17,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
       <html lang="en">
       <body className={`max-w-screen ${inter.className}`}>
         {children}
       </body>
     </html>
-    </ClerkProvider>
     
   );
 }
